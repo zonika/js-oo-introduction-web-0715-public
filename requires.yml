@@ -1,0 +1,7 @@
+# A list of javascript files required for the project, in dependency order
+javascripts:
+  files:
+    - js/bike.js
+    - js/owner.js
+  specs:
+    - spec/js-OO-spec.js
