@@ -11,7 +11,7 @@ Bike.prototype = {
   constructor: Bike,
   wheels: 2,
   takeForARide: function(miles){
-    if (miles > 20) {
+    if (miles > 50) {
       this.condition = 'needs a tune up';
     }
   },

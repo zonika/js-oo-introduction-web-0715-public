@@ -1,10 +1,11 @@
 describe("Owner", function() {
+
   var mitch;
   beforeEach(function() {
     mitch = new Owner("Mitch");
     fabrizio = new Bike("Fabrizio", "roadbike", "black");
     george = new Bike("George", "mountain bike", "blue");
-    mitch.bikes = [fabrizio, george];
+    mitch.bikes.push(fabrizio, george);
   });
 
   it("should have a name", function() {
@@ -12,32 +13,32 @@ describe("Owner", function() {
   });
 
   it("should own several bikes", function() {
-    expect(mitch.bikes).toBe([fabrizio, george]);
+    expect(mitch.bikes.length).toBe(2);
   });
 
   it("should be able to build a new bike", function() {
     mitch.buildBike("Reginald", "roadbike", "orange");
-    expect(mitch.bikes).toContain(reginald);
+    expect(mitch.bikes[mitch.bikes.length-1].name).toBe("Reginald")
   });
 
   it("should be able to go on a bike ride", function() {
-    // figure out how to test for a bike ride.
-    // take in two arguments, 1 = bike, 2 = ride length in miles
-    // the result should wear out the bike and require a tune up
+    mitch.rideBike("Fabrizio", 100);
+    expect(fabrizio.condition).toBe("needs a tune up");
   });
 
 });
 
 describe("Bike", function() {
-  // not sure if i need to define these here or in the spec above???
+
   var fabrizio, george;
   beforeEach(function() {
     fabrizio = new Bike("Fabrizio", "roadbike", "red");
-    // name, type, color
+    george = new Bike("George", "mountain bike", "blue");
   });
 
   it("should have a frame and a color", function () {
     expect(fabrizio.frameColor).toBe("red");
+    expect(george.frameColor).toBe("blue");
   });
 
   it("should have two wheels", function () {
@@ -46,18 +47,19 @@ describe("Bike", function() {
 
   it("should know what type of bike it is", function() {
     expect(fabrizio.bikeType).toBe("roadbike");
+    expect(george.bikeType).toBe("mountain bike");
   });
 
   it("should know about it's condition", function() {
-    expect(fabrizio.contition).toBe("ready to go!");
+    expect(fabrizio.condition).toBe("ready to go!");
     fabrizio.takeForARide(100);
-    expect(fabrizio.contition).toBe("needs a tune up");
+    expect(fabrizio.condition).toBe("needs a tune up");
+    expect(george.condition).toBe("ready to go!");
   });
 
   it("should be able to be tuned up", function() {
-    fabrizio.takeForARide(100);
     fabrizio.tuneUp();
-    expect(fabrizio.contition).toBe("ready to go!")
+    expect(fabrizio.condition).toBe("ready to go!")
   });
 
 });
