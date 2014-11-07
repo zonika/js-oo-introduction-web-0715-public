@@ -41,6 +41,10 @@ Pet.prototype.speak = function(){
 // creating a new object
 vivian = new Pet('Lady Vivian the Terrible', 'dog');
 zargon = new Pet('Zargon', 'fish');
+vivian.speak();
+// -> woof
+zargon.speak();
+// -> hello, I'm a fish
 ```
 
 ## Instructions
