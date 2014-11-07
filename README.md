@@ -26,15 +26,13 @@ function Pet (name, kind) {
   this.kind = kind;
 }
 
-// methods
-Pet.prototype = {
-  constructor: Pet,
-  speak: function(){
-    if (this.kind == 'dog'){
+// instance methods
+Pet.prototype.speak = function(){
+    if ( this.kind == 'dog' ){
       return 'woof';
-    }else if (this.kind == 'cat'){
+    } else if (this.kind == 'cat'){
       return 'meow';
-    }else{
+    } else{
       return 'hello, I\'m a ' + this.kind;
     }
   }
