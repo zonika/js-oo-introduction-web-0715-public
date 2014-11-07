@@ -42,7 +42,7 @@ describe("Bike", function() {
   });
 
   it("should have two wheels", function () {
-    expect(fabrizio.wheels).toBe(2);
+    expect(fabrizio.WHEELS).toBe(2);
   })
 
   it("should know what type of bike it is", function() {
