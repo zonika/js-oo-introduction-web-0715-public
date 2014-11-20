@@ -49,6 +49,18 @@ zargon.speak();
 
 ## Instructions
 
+- Flesh out the Bike and Owner constructors
+- Bike instances have a `name`, `type`, `color`, and 'condition' properties
+  - `condition` is by default equal to 'ready to go!'
+- Owner instances have a `name` and `bikes` properties
+- Bikes have a constant called `WHEELS` set to 2
+- Bikes have `#takeForARide` method that, if more than 50 miles are traveled it sets the `condition` property to 'needs a tune up'
+- Bikes have a `#tuneUp` method that sets the `condition` property to 'ready to go!'
+- Owners have a `#buildBikes` method that creates a new bike that they then own
+- Owners have a `#rideBike` method that only works on bikes that they own
+  - this method takes a number of miles as an argument
+
+## Tests
 Run the Jasmine test and build out your objects. The test should help guide you.
 
 ```shell
