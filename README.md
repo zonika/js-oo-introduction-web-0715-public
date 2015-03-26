@@ -66,11 +66,11 @@ Run the Jasmine test and build out your objects. The test should help guide you.
 ```shell
 # Install jasmine:
 gem sources -a http://flatiron:33west26@gems.flatironschool.com
-gem install ironboard
+gem install learn-co
 
 # Run Jasmine test suite:
-ironboard  # runs only in the terminal
-ironboard -b # runs also in the browser
+learn  # runs only in the terminal
+learn -b # runs also in the browser
 ```
 
 ## Resources
