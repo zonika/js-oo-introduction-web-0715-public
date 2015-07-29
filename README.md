@@ -1,9 +1,4 @@
----
-tags: OO, object interactions
-languages: javascript
-level: intermediate
-resources: 1
----
+
 
 # JavaScript OO Introduction
 
