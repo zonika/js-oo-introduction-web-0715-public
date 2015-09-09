@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="5" errors="0" failures="0" time="0.003" timestamp="2015-09-09T09:48:15">
+		<testcase classname="Bike" name="should have a frame and a color" time="0">
+		</testcase>
+		<testcase classname="Bike" name="should have two wheels" time="0.001">
+		</testcase>
+		<testcase classname="Bike" name="should know what type of bike it is" time="0">
+		</testcase>
+		<testcase classname="Bike" name="should know about it&amp;apos;s condition" time="0.001">
+		</testcase>
+		<testcase classname="Bike" name="should be able to be tuned up" time="0">
+		</testcase>
+	</testsuite>
+</testsuites>
+

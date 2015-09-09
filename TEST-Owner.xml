@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="4" errors="0" failures="0" time="0.006" timestamp="2015-09-09T09:48:15">
+		<testcase classname="Owner" name="should have a name" time="0.001">
+		</testcase>
+		<testcase classname="Owner" name="should own several bikes" time="0">
+		</testcase>
+		<testcase classname="Owner" name="should be able to build a new bike" time="0">
+		</testcase>
+		<testcase classname="Owner" name="should be able to go on a bike ride" time="0.001">
+		</testcase>
+	</testsuite>
+</testsuites>
+
